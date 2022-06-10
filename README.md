@@ -15,7 +15,7 @@ Bitcoin uses secp256k1 which is defined as y^2 = x^3 + ax + b, where a = 0, b = 
 
 **The Implementation**
 
-Elliptic Curve Digital Signal Algorithm (ECDSA) has two (3) primary components:
+Elliptic Curve Digital Signature Algorithm (ECDSA) has two (3) primary components:
 
 
 1. Generation of cryptographically secure private/public key pair 
