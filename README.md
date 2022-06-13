@@ -11,7 +11,7 @@ An elliptic curve over infinite ‘real numbers’ is not practical or feasible.
 
 **Curve for Bitcoin**
 
-Bitcoin uses secp256k1 which is defined as y^2 = x^3 + ax + b, where a = 0, b = 7 and a very larger prime number, p = 2256 – 232 - 977. Bitcoin’s actual curve is defined over a finite field as noted above and hence has random scatter points. This implementation yields asymmetric relationship P = eG with discrete log difficulty to compute e from P and G.
+Bitcoin uses secp256k1 which is defined as y^2 = x^3 + ax + b, where a = 0, b = 7 and a very larger prime number, p = 2^256 – 2^32 - 977. Bitcoin’s actual curve is defined over a finite field as noted above and hence has random scatter points. This implementation yields asymmetric relationship P = eG with discrete log difficulty to compute e from P and G.
 
 **The Implementation**
 
