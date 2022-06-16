@@ -3,7 +3,9 @@ Implementation of Elliptic Curve Digital Signature Algorithm in Golang
 
 **The Basics**
 
-In general, an elliptic curve takes the form of y^2 = x^3 + ax + b. An example of this plotted over real numbers on cartesian x-y coordinates is shown ![Elliptic Curve](Reference%20Images/Elliptic%20Curve.png).
+In general, an elliptic curve takes the form of y^2 = x^3 + ax + b. An example of this plotted over real numbers on cartesian x-y coordinates is shown 
+
+![Elliptic Curve](Reference%20Images/Elliptic_Curve.png).
 
 Point ‘addition’ (or operation) on this curve is defined when a line crossing two points, to be added, intersects a third point on the curve. Addition is simply the third point reflected over x-axis. Point addition (or operation) can be performed when P1 = P2 and P1 != P2. The operation itself satisfies Identity, Commutativity, Associativity, and Invertibility.
 
@@ -17,12 +19,13 @@ Bitcoin uses secp256k1 which is defined as y^2 = x^3 + ax + b, where a = 0, b = 
 
 Elliptic Curve Digital Signature Algorithm (ECDSA) has three (3) primary components:
 
-
 1. Generation of cryptographically secure private/public key pair 
 2. Signing of a message and generation of appropriate signature components
 3. Verification of a signature
 
-This figure shows the graphical representation of this implementation in Go.
+The figure below shows the graphical representation of this implementation in Go.
+
+![ecdsaPlay Implementation](Reference%20Images/ecdsaPlayImplementation.png).
 
 **Component 1: Private/Public Key Pair**
 
