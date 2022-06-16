@@ -3,7 +3,7 @@ Implementation of Elliptic Curve Digital Signature Algorithm in Golang
 
 **The Basics**
 
-In general, an elliptic curve takes the form of y^2 = x^3 + ax + b. An example of this plotted over real numbers on cartesian x-y coordinates is shown ![Elliptic Curve](Reference images/Elliptic Curve.png).
+In general, an elliptic curve takes the form of y^2 = x^3 + ax + b. An example of this plotted over real numbers on cartesian x-y coordinates is shown ![Elliptic Curve](Reference%20Images/Elliptic%20Curve.png).
 
 Point ‘addition’ (or operation) on this curve is defined when a line crossing two points, to be added, intersects a third point on the curve. Addition is simply the third point reflected over x-axis. Point addition (or operation) can be performed when P1 = P2 and P1 != P2. The operation itself satisfies Identity, Commutativity, Associativity, and Invertibility.
 
@@ -63,5 +63,7 @@ The function compares 'r' from the output of the signature, to 'r' calculated as
 **References**
 
 [1] Federal Information Processing Standard Publication (FIPS PUB 186-4) Digital Signature Standard (DSS), July 2013
+
 [2] Jimmy Song: Programing Bitcoin, 2019
+
 [3] Andreas M. Antonopoulos: Mastering Bitcoin, 2018
