@@ -5,7 +5,7 @@ Implementation of Elliptic Curve Digital Signature Algorithm in Golang
 
 In general, an elliptic curve takes the form of y^2 = x^3 + ax + b. An example of this plotted over real numbers on cartesian x-y coordinates is shown 
 
-![Elliptic Curve](Reference%20Images/Elliptic_Curve.png).
+![Elliptic Curve](Reference%20Images/Elliptic_Curve.png)
 
 Point ‘addition’ (or operation) on this curve is defined when a line crossing two points, to be added, intersects a third point on the curve. Addition is simply the third point reflected over x-axis. Point addition (or operation) can be performed when P1 = P2 and P1 != P2. The operation itself satisfies Identity, Commutativity, Associativity, and Invertibility.
 
@@ -25,11 +25,11 @@ Elliptic Curve Digital Signature Algorithm (ECDSA) has three (3) primary compone
 
 The figure below shows the graphical representation of this implementation in Go.
 
-![ecdsaPlay Implementation](Reference%20Images/ecdsaPlayImplementation.png).
+![ecdsaPlay Implementation](Reference%20Images/ecdsaPlayImplementation.png)
 
 **Component 1: Private/Public Key Pair**
 
-Function titled *GeneratePrivatePublicKeyPair* takes a standard implementation of Go's elliptic curve as its input and returns a struct that includes public address and private key pair. To generate private key, the function calls *GeneratePreMessageSecrete* which uses extra random bits as described in Federal Information Processing Standard Publication (FIPS PUB 186-4) Digital Signature Standard (DSS) issued July 2013. It allocates multiple byte-size memory based on the bit length of the order of the curve (i.e., N)  + 64 additional random bits. Go's rand.Read fills the allocated memory with cryptographically secure random number generation. For example, using secp256r1, 40 bytes of memory space gets allocated. Each byte contains a random number between 0 and 255.
+Function titled *GeneratePrivatePublicKeyPair* takes a standard implementation of Go's elliptic curve as its input and returns a struct that includes public address and private key pair. To generate private key, the function calls *GeneratePreMessageSecret* which uses extra random bits as described in Federal Information Processing Standard Publication (FIPS PUB 186-4) Digital Signature Standard (DSS) issued July 2013. It allocates multiple byte-size memory based on the bit length of the order of the curve (i.e., N)  + 64 additional random bits. Go's rand.Read fills the allocated memory with cryptographically secure random number generation. For example, using secp256r1, 40 bytes of memory space gets allocated. Each byte contains a random number between 0 and 255.
 
 Helper function titled *ConcatenateBytes* creates a single big.Int value (i.e., labeled as c) based on the sequential order of the slice of 40 bytes. The function performs this operation as per the following logic:
 
