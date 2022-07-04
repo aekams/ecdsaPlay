@@ -23,7 +23,7 @@ Elliptic Curve Digital Signature Algorithm (ECDSA) has three (3) primary compone
 2. Signing of a message and generation of appropriate signature components
 3. Verification of a signature
 
-The figure below shows the graphical representation of this implementation in Go.
+The figure below shows a graphical representation of this implementation in Go.
 
 ![ecdsaPlay Implementation](Reference%20Images/ecdsaPlayImplementation.png)
 
